@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Lightbox2 -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.css">
+
 
     <title>FLICKR API</title>
 </head>
@@ -42,11 +46,30 @@
                           Latest
                         </label>
                       </div>
+
+                    <h5 class="mt-2">Limit: </h5>
+                    <div class="form-group">
+                      <select name="limit" id="limit" class="form-control">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="25" selected>25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>
+                    </div>
         </div>
-      
+
+        <!-- TEST ta bort sen 
+<a href="img/img1.jpeg" data-lightbox="pictures"><img width=200px; src="img/img1.jpeg"></a>
+<a href="img/img2.jpeg" data-lightbox="pictures"><img width=200px; src="img/img2.jpeg"></a>
+<a href="img/img3.jpeg" data-lightbox="pictures"><img width=200px; src="img/img3.jpeg"></a>
+      -->
         <div id="photos"></div>
       </div>
 <script src="js/main.js"></script>
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.js"></script>
+
 </body>
 </html>

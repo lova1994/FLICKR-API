@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>FLICKR API</title>
 </head>
 <body>
 
-<input type="text" id="search">
-<button> Search </button>
-<section id="photos"></section>
 
+
+
+
+
+<nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container">
+          <span class="navbar-brand">FLICKRsearch</span>
+        </div>
+      </nav>
+
+      <form>
+            <div class="form-group">
+      <input type="text" id="search">
+<button type="button" class="btn btn-secondary" > Search </button>
+
+            </form>
+
+            <div class="form-check form-check-inline">
+                    Sort By:
+                    <input class="form-check-input ml-2" type="radio" name="sortby" value="relevance" checked>
+                    <label class="form-check-label">
+                      Relevance
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sortby" value="date-posted-asc">
+                        <label class="form-check-label">
+                          Latest
+                        </label>
+                      </div>
+        </div>
+      
+        <div id="photos"></div>
+      </div>
 <script src="js/main.js"></script>
     
 </body>
